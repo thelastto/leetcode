@@ -17,4 +17,3 @@
 
 - [x] [006-ZigZag Conversion.java](https://github.com/thelastto/leetcode/blob/master/006-ZigZag%20Conversion.java)
 
-- [ ] 
