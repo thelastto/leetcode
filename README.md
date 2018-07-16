@@ -17,3 +17,5 @@
 
 - [x] [006-ZigZag Conversion.java](https://github.com/thelastto/leetcode/blob/master/006-ZigZag%20Conversion.java)
 
+- [x] [007-Reverse Integer.c](https://github.com/thelastto/leetcode/blob/master/007-Reverse%20Integer.c)
+
