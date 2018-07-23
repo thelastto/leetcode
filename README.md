@@ -19,3 +19,15 @@
 
 - [x] [007-Reverse Integer.c](https://github.com/thelastto/leetcode/blob/master/007-Reverse%20Integer.c)
 
+- [x] [011-Container With Most Water.c](https://github.com/thelastto/leetcode/blob/master/011-Container%20With%20Most%20Water.c)
+
+- [x] [012-Integer to Roman.c](https://github.com/thelastto/leetcode/blob/master/012-Integer%20to%20Roman.c)
+
+- [x] [014-Longest Common Prefix.c](https://github.com/thelastto/leetcode/blob/master/014-Longest%20Common%20Prefix.c)
+
+- [x] [015-3Sum.py](https://github.com/thelastto/leetcode/blob/master/015-3Sum.py)
+
+  I am learning python recently. So python will be given priority to solve problems.
+
+- [x] [017-Letter Combinations of a Phone Number.py](https://github.com/thelastto/leetcode/blob/master/017-Letter%20Combinations%20of%20a%20Phone%20Number.py) 
+
