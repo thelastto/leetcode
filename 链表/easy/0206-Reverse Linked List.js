@@ -21,7 +21,7 @@
 /*
   ⚠需要考虑特殊情况 head 为 null
 */
-var reverseList = function(head) {
+var reverseListA = function(head) {
     if (!head || !head.next) {
         return head
     }
@@ -30,6 +30,31 @@ var reverseList = function(head) {
     let next
 
     head.next = null
+
+    while (cur) {
+        next = cur.next
+        cur.next = tempHead
+        tempHead = cur
+        cur = next
+    }
+    return tempHead
+};
+
+/**
+
+  tempHead 初始为 null 的原因是，需要把 1(head) 的 next 指向 null
+*/
+
+/*
+  改进后
+*/
+var reverseListB = function(head) {
+    if (!head) {
+        return head
+    }
+    let tempHead = null
+    let cur = head
+    let next
 
     while (cur) {
         next = cur.next
