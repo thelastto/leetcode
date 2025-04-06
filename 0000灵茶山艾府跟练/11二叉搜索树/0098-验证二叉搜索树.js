@@ -18,20 +18,18 @@
  * @return {boolean}
  */
 var isValidBST = function(root) {
-    let pre = -Infinity
-    function compare(node) {
-        if (!node) return true
-        if (!compare(node.left)) {
-            return false
+    function getMinMax (node) {
+        if (!node) {
+            return [Infinity, -Infinity]
         }
-        if (node.val <= pre) {
-            return false
+        const [left_min, left_max] = getMinMax(node.left)
+        const [right_min, right_max] = getMinMax(node.right)
+        if (node.val <= left_max || node.val >= right_min) {
+            return [-Infinity, Infinity]
         }
-        pre = node.val
-        return compare(node.right)
-        
+        return [Math.min(left_min, node.val), Math.max(right_max, node.val)]
     }
-    return compare(root)
+    return getMinMax(root)[1] !== Infinity
 };
 
 // @lc code=end
@@ -50,4 +48,21 @@ var isValidBST = function(root) {
         return validate_right
     }
     return compare(root, -Infinity, Infinity)
+};
+
+var isValidBST = function(root) {
+    let pre = -Infinity
+    function compare(node) {
+        if (!node) return true
+        if (!compare(node.left)) {
+            return false
+        }
+        if (node.val <= pre) {
+            return false
+        }
+        pre = node.val
+        return compare(node.right)
+        
+    }
+    return compare(root)
 };
